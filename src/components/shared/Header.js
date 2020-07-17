@@ -8,7 +8,7 @@ class Header extends React.Component {
   render () {
     return (
       <Layout.Header id="header">
-        <h1>Apple Music 2 Spotify <span role="img" aria-label="Music">🎸</span></h1>
+        <h1>Apple Music 2 Spotify</h1>
         <Menu
           theme="dark"
           mode="horizontal"
