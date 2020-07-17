@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/AppleMusic2Spotify/precache-manifest.f6b87769fca811538ed0b0b99d92fc6d.js"
+  "/AppleMusic2Spotify/precache-manifest.fdf14889c6fc8efc268305637aeabef2.js"
 );
 
 self.addEventListener('message', (event) => {

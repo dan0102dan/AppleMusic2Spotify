@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/AppleMusic2Spotify/static/css/main.130932e9.chunk.css",
-    "main.js": "/AppleMusic2Spotify/static/js/main.ce2e72b5.chunk.js",
-    "main.js.map": "/AppleMusic2Spotify/static/js/main.ce2e72b5.chunk.js.map",
+    "main.js": "/AppleMusic2Spotify/static/js/main.d98a1c13.chunk.js",
+    "main.js.map": "/AppleMusic2Spotify/static/js/main.d98a1c13.chunk.js.map",
     "runtime-main.js": "/AppleMusic2Spotify/static/js/runtime-main.f74ae169.js",
     "runtime-main.js.map": "/AppleMusic2Spotify/static/js/runtime-main.f74ae169.js.map",
     "static/css/2.a7bad2f4.chunk.css": "/AppleMusic2Spotify/static/css/2.a7bad2f4.chunk.css",
     "static/js/2.932e811e.chunk.js": "/AppleMusic2Spotify/static/js/2.932e811e.chunk.js",
     "static/js/2.932e811e.chunk.js.map": "/AppleMusic2Spotify/static/js/2.932e811e.chunk.js.map",
     "index.html": "/AppleMusic2Spotify/index.html",
-    "precache-manifest.f6b87769fca811538ed0b0b99d92fc6d.js": "/AppleMusic2Spotify/precache-manifest.f6b87769fca811538ed0b0b99d92fc6d.js",
+    "precache-manifest.fdf14889c6fc8efc268305637aeabef2.js": "/AppleMusic2Spotify/precache-manifest.fdf14889c6fc8efc268305637aeabef2.js",
     "service-worker.js": "/AppleMusic2Spotify/service-worker.js",
     "static/css/2.a7bad2f4.chunk.css.map": "/AppleMusic2Spotify/static/css/2.a7bad2f4.chunk.css.map",
     "static/css/main.130932e9.chunk.css.map": "/AppleMusic2Spotify/static/css/main.130932e9.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.a7bad2f4.chunk.css",
     "static/js/2.932e811e.chunk.js",
     "static/css/main.130932e9.chunk.css",
-    "static/js/main.ce2e72b5.chunk.js"
+    "static/js/main.d98a1c13.chunk.js"
   ]
 }
