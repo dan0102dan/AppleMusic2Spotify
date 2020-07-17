@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Layout } from 'antd';
 
 import Header from './components/shared/Header';
-import Footer from './components/shared/Footer';
 import Routes from './components/Routes';
 
 import 'antd/dist/antd.css';
@@ -19,7 +18,6 @@ class App extends Component {
             <Routes/>
           </div>
         </div>
-        <Footer/>
       </Layout>
     );
   }

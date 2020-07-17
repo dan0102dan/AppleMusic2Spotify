@@ -11,20 +11,20 @@ export default class Home extends React.Component {
   }
 
   loginMessage () {
-    return <div>
+    return <div className='button'>
       {isLoggedIn()
-        ? <Button style={{ background: '#fff', color: 'green' }} onClick={this.logout.bind(this)}>Logout</Button>
-        : <Button style={{ background: '#fff', color: 'green' }} href={getLoginUrl()}>Login</Button>}
+        ? <Button size="l" style={{ background: '#1DB954', color: '#fff', display: 'flex', margin: '0 auto', width: '202px', height: '53px', borderRadius: '500px', fontSize: '10px', alignItems: 'center', justifyContent: 'center' }} onClick={this.logout.bind(this)}>Logout</Button>
+        : <Button size="l" style={{ background: '#1DB954', color: '#fff', display: 'flex', margin: '0 auto', width: '202px', height: '53px', borderRadius: '500px', fontSize: '10px', alignItems: 'center', justifyContent: 'center' }} href={getLoginUrl()}>Login</Button>}
     </div>;
   }
 
   render () {
     return (
       <div>
-        <h2>Apple Music to Spotify <span role="img" aria-label="music">🎸</span></h2>
-        <p>
+        <h1 style={{textAlign: 'center', fontSize: '50px'}}>Apple Music to Spotify <span role="img" aria-label="music">🎸</span></h1>
+        <h2 style={{textAlign: 'center'}}>
           This tool helps you to transfer your playlists from apple music to Spotify.
-        </p>
+        </h2>
         {this.loginMessage()}
       </div>
     );
