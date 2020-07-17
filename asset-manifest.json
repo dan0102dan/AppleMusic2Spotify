@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/AppleMusic2Spotify/static/css/main.130932e9.chunk.css",
+    "main.js": "/AppleMusic2Spotify/static/js/main.351918d0.chunk.js",
+    "main.js.map": "/AppleMusic2Spotify/static/js/main.351918d0.chunk.js.map",
+    "runtime-main.js": "/AppleMusic2Spotify/static/js/runtime-main.f74ae169.js",
+    "runtime-main.js.map": "/AppleMusic2Spotify/static/js/runtime-main.f74ae169.js.map",
+    "static/css/2.a7bad2f4.chunk.css": "/AppleMusic2Spotify/static/css/2.a7bad2f4.chunk.css",
+    "static/js/2.932e811e.chunk.js": "/AppleMusic2Spotify/static/js/2.932e811e.chunk.js",
+    "static/js/2.932e811e.chunk.js.map": "/AppleMusic2Spotify/static/js/2.932e811e.chunk.js.map",
+    "index.html": "/AppleMusic2Spotify/index.html",
+    "precache-manifest.0f6829e57c4dfead96e00b7d78540f94.js": "/AppleMusic2Spotify/precache-manifest.0f6829e57c4dfead96e00b7d78540f94.js",
+    "service-worker.js": "/AppleMusic2Spotify/service-worker.js",
+    "static/css/2.a7bad2f4.chunk.css.map": "/AppleMusic2Spotify/static/css/2.a7bad2f4.chunk.css.map",
+    "static/css/main.130932e9.chunk.css.map": "/AppleMusic2Spotify/static/css/main.130932e9.chunk.css.map",
+    "static/js/2.932e811e.chunk.js.LICENSE.txt": "/AppleMusic2Spotify/static/js/2.932e811e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f74ae169.js",
+    "static/css/2.a7bad2f4.chunk.css",
+    "static/js/2.932e811e.chunk.js",
+    "static/css/main.130932e9.chunk.css",
+    "static/js/main.351918d0.chunk.js"
+  ]
+}
