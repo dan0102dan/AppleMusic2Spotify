@@ -244,7 +244,7 @@ class TransferPlaylistStep3 extends React.Component {
             <List.Item.Meta
               avatar={<Avatar src={item.image} size="large"/>}
               description={<p>Album: <a href={item.albumLink}>{item.albumName}</a> - {formatSeconds(item.duration)}</p>}
-              title={<a href={item.link} target="_blank">{item.artistName} - {item.name}</a>}
+              title={<a rel="noopener noreferrer" href={item.link} target="_blank">{item.artistName} - {item.name}</a>}
             />
           </List.Item>;
         }}
