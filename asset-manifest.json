@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/applemusic2spotify/static/css/main.96219e57.chunk.css",
-    "main.js": "/applemusic2spotify/static/js/main.887bcde2.chunk.js",
-    "main.js.map": "/applemusic2spotify/static/js/main.887bcde2.chunk.js.map",
+    "main.css": "/applemusic2spotify/static/css/main.9ce0a29d.chunk.css",
+    "main.js": "/applemusic2spotify/static/js/main.bec34fb2.chunk.js",
+    "main.js.map": "/applemusic2spotify/static/js/main.bec34fb2.chunk.js.map",
     "runtime-main.js": "/applemusic2spotify/static/js/runtime-main.de49b6fc.js",
     "runtime-main.js.map": "/applemusic2spotify/static/js/runtime-main.de49b6fc.js.map",
     "static/css/2.d88ab335.chunk.css": "/applemusic2spotify/static/css/2.d88ab335.chunk.css",
     "static/js/2.4ed27921.chunk.js": "/applemusic2spotify/static/js/2.4ed27921.chunk.js",
     "static/js/2.4ed27921.chunk.js.map": "/applemusic2spotify/static/js/2.4ed27921.chunk.js.map",
     "index.html": "/applemusic2spotify/index.html",
-    "precache-manifest.e7e5e8793063ba208b63105d5e137aff.js": "/applemusic2spotify/precache-manifest.e7e5e8793063ba208b63105d5e137aff.js",
+    "precache-manifest.d2eee90f220e79b0f872c5222199c9a6.js": "/applemusic2spotify/precache-manifest.d2eee90f220e79b0f872c5222199c9a6.js",
     "service-worker.js": "/applemusic2spotify/service-worker.js",
     "static/css/2.d88ab335.chunk.css.map": "/applemusic2spotify/static/css/2.d88ab335.chunk.css.map",
-    "static/css/main.96219e57.chunk.css.map": "/applemusic2spotify/static/css/main.96219e57.chunk.css.map",
+    "static/css/main.9ce0a29d.chunk.css.map": "/applemusic2spotify/static/css/main.9ce0a29d.chunk.css.map",
     "static/js/2.4ed27921.chunk.js.LICENSE.txt": "/applemusic2spotify/static/js/2.4ed27921.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.de49b6fc.js",
     "static/css/2.d88ab335.chunk.css",
     "static/js/2.4ed27921.chunk.js",
-    "static/css/main.96219e57.chunk.css",
-    "static/js/main.887bcde2.chunk.js"
+    "static/css/main.9ce0a29d.chunk.css",
+    "static/js/main.bec34fb2.chunk.js"
   ]
 }
