@@ -90,14 +90,14 @@ export default class TransferPlaylist extends React.Component {
   render () {
     const Step = Steps.Step;
     if (!isLoggedIn()) {
-      return <p>You need to login first.</p>;
+      return <h2 style={{textAlign: 'center'}}>You need to login first.</h2>;
     }
     if (this.state.isFetchingUser) {
-      return <p>Fetching your data...</p>;
+      return <p style={{textAlign: 'center'}}>Fetching your data...</p>;
     }
     return (
       <div>
-        <h2>Transfer Playlist</h2><br/>
+        <h2 style={{textAlign: 'center'}}>Transfer Playlist</h2><br/>
         <Steps current={this.state.step}>
           <Step title="Upload Playlist" description="Upload playlist file"/>
           <Step title="Select Playlist Songs" description="Select specific songs of the playlist to transfer"/>

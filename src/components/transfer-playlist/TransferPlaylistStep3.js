@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Button } from '@vkontakte/vkui';
+import '@vkontakte/vkui/dist/vkui.css';
 import {
   Table,
   Icon,
-  Button,
   Tag,
   Modal,
   List,

@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Table, Icon, Button } from 'antd';
+import { Button } from '@vkontakte/vkui';
+import '@vkontakte/vkui/dist/vkui.css';
+import Icon28ArrowRightOutline from '@vkontakte/icons/dist/28/arrow_right_outline';
+import { Table } from 'antd';
 
 import AppleMusicPlaylist from '../../services/AppleMusicPlaylist';
 
@@ -27,12 +30,16 @@ export default class TransferPlaylistStep2 extends React.Component {
             {hasSelected ? `Selected ${selectedRowKeys.length} items` : ''}
           </span>
       <Button
-        type="primary"
-        size={'large'}
-        onClick={this.nextStep.bind(this)}
-        disabled={!hasSelected}
-      >
-        Next Step<Icon type="arrow-right"/>
+      size="l" 
+      style={{ background: '#1DB954', color: '#fff', borderRadius: '500px' }}
+      onClick={this.nextStep.bind(this)}
+      disabled={!hasSelected}>
+        <div
+        display='flex'>
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+          Next Step<Icon28ArrowRightOutline style={{marginLeft: 4}}/>
+            </div>
+          </div>
       </Button>
     </div>;
   }

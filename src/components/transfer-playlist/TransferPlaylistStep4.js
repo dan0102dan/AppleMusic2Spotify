@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { chunk } from 'lodash';
-import { Button, Card, Dropdown, Menu, Form, Input, Modal, Checkbox, Table, Alert } from 'antd';
+import { Button } from '@vkontakte/vkui';
+import '@vkontakte/vkui/dist/vkui.css';
+import { Card, Dropdown, Menu, Form, Input, Modal, Checkbox, Table, Alert } from 'antd';
 
 import { getPlaylists, createPlaylist, addTrackToPlaylist } from '../../services/ApiService';
 
