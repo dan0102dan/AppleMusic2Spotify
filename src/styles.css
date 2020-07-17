@@ -14,6 +14,7 @@ body {
 	float: left;
 	margin: 0 40px 0 0;
 	font-size: 20px;
+    animation: h1 3.7s ease;
 }
 
 #header .ant-menu {
@@ -21,11 +22,35 @@ body {
 }
 
 #content {
-	background: #fff;
+	background: linear-gradient(-45deg, #215324, #32b764);
 	padding: 40px 0;
 	min-height: calc(100vh - 133px);
+	background-size: 300% 300%;
+	animation: gradient 7s ease infinite;
 }
 
 .container {
 	padding: 0 50px;
 }
+
+@keyframes gradient {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+}
+@keyframes h1 {
+   0% {
+     opacity: 0;
+     transform:  translate(-170px, 0px)  ;
+   }
+   100% {
+     opacity: 1;
+     transform:  translate(0px, 0px)  ;
+   }
+ }

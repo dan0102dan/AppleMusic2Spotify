@@ -3,8 +3,11 @@
   "description": "Import your apple music to Spotify easily",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://dan0102dan.github.io/AppleMusic2Spotify",
+  "homepage": "https://dan0102dan.github.io/applemusic2spotify",
   "dependencies": {
+    "@vkontakte/icons": "^1.28.0",
+    "@vkontakte/vk-bridge": "^2.2.3",
+    "@vkontakte/vkui": "^3.11.7",
     "antd": "^3.26.18",
     "axios": "^0.18.0",
     "axios-cancel": "^0.2.2",

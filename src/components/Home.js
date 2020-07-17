@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button } from 'antd';
+import { Button } from '@vkontakte/vkui';
+import '@vkontakte/vkui/dist/vkui.css';
 import { isLoggedIn, getLoginUrl, logout } from '../services/AuthService';
 
 export default class Home extends React.Component {
@@ -12,8 +13,8 @@ export default class Home extends React.Component {
   loginMessage () {
     return <div>
       {isLoggedIn()
-        ? <Button onClick={this.logout.bind(this)}>Logout</Button>
-        : <Button href={getLoginUrl()}>Login</Button>}
+        ? <Button style={{ background: '#fff', color: 'green' }} onClick={this.logout.bind(this)}>Logout</Button>
+        : <Button style={{ background: '#fff', color: 'green' }} href={getLoginUrl()}>Login</Button>}
     </div>;
   }
 
@@ -22,7 +23,7 @@ export default class Home extends React.Component {
       <div>
         <h2>Apple Music to Spotify <span role="img" aria-label="music">🎸</span></h2>
         <p>
-          This tool helps you to transfer your playlists from Apple Mucic to Spotify.
+          This tool helps you to transfer your playlists from apple music to Spotify.
         </p>
         {this.loginMessage()}
       </div>

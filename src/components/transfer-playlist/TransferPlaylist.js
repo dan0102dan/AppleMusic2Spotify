@@ -90,7 +90,7 @@ export default class TransferPlaylist extends React.Component {
   render () {
     const Step = Steps.Step;
     if (!isLoggedIn()) {
-      return <p>To use this page, you need to log in.</p>;
+      return <p>You need to login first.</p>;
     }
     if (this.state.isFetchingUser) {
       return <p>Fetching your data...</p>;

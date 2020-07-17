@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Upload, Button, Icon, Card, notification } from 'antd';
+import { Button } from '@vkontakte/vkui';
+import '@vkontakte/vkui/dist/vkui.css';
+import Icon28DownloadOutline from '@vkontakte/icons/dist/28/download_outline';
+import { Upload, Card, notification } from 'antd';
 import AppleMusicPlaylist from '../../services/AppleMusicPlaylist';
 
 export default class TransferPlaylistStep1 extends React.Component {
@@ -33,13 +36,13 @@ export default class TransferPlaylistStep1 extends React.Component {
   render () {
     return <Card style={{marginRight: 'auto', marginLeft: 'auto', width: 650, textAlign: 'center'}}>
       <p>
-        Select your playlist from iTunes and from "File" menu click on "Library > Export Playlist...". <br/>
+        Select your playlist from iTunes and from "File" menu click on "Library --> Export Playlist...". <br/>
         Then from "Format" menu select "Unicode Text" and save the file. <br/>
         Upload the file from the following field:
       </p>
       <Upload beforeUpload={this.beforeUpload.bind(this)} fileList={[]}>
-        <Button>
-          <Icon type="upload"/> Select File
+        <Button before={<Icon28DownloadOutline/>} style={{color: 'green', background: '#f5f5f5'}}>
+          Select File
         </Button>
       </Upload>
     </Card>;
