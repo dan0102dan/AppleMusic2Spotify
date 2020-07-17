@@ -22,7 +22,7 @@ body {
 }
 
 #content {
-	background: linear-gradient(-45deg, #215324, #32b764);
+	background: linear-gradient(-45deg, #6754d0, #89e0ae);
 	padding: 40px 0;
 	min-height: calc(100vh - 133px);
 	background-size: 300% 300%;
