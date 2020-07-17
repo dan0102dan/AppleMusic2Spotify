@@ -36,8 +36,8 @@ export default class TransferPlaylistStep1 extends React.Component {
   render () {
     return <Card style={{marginRight: 'auto', marginLeft: 'auto', maxWidth: '650px', textAlign: 'center'}}>
       <p>
-        Select your playlist in iTunes and from "File" menu click on "Library --> Export Playlist". <br/>
-        Then from "Format" menu select "Unicode Text" and save the file. (must be a .txt file) <br/>
+        Select your playlist in iTunes and from "File" menu click on "Library" then "Export Playlist". <br/>
+        Then from "Format" menu select "Unicode Text" and save the file. (must be a <code>.txt</code> file) <br/>
         Upload this file from the following field:
       </p>
       <Upload beforeUpload={this.beforeUpload.bind(this)} fileList={[]}>

@@ -19,6 +19,7 @@ body {
 
 #header .ant-menu {
 	border: 0;
+	animation: vision 3.7s ease;
 }
 
 #content {
@@ -35,24 +36,32 @@ body {
 	animation: down 3.7s ease;
 }
 
+@keyframes vision {
+	0% {
+	  opacity: 0;
+	}
+	100% {
+	  opacity: 1;
+	}
+ }
 @keyframes left {
    0% {
      opacity: 0;
-     transform:  translate(-170px, 0px)  ;
+     transform:  translate(-170px, 0px);
    }
    100% {
      opacity: 1;
-     transform:  translate(0px, 0px)  ;
+     transform:  translate(0px, 0px);
    }
 }
 @keyframes down {
 	0% {
 	  opacity: 0;
-	  transform:  translate(0px, 100px)  ;
+	  transform:  translate(0px, 100px);
 	}
 	100% {
 	  opacity: 1;
-	  transform:  translate(0px, 0px)  ;
+	  transform:  translate(0px, 0px);
 	}
  }
  @media only menu and (max-width: 10px) {
