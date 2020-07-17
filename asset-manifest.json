@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/applemusic2spotify/static/css/main.686534b3.chunk.css",
-    "main.js": "/applemusic2spotify/static/js/main.0e18b4e2.chunk.js",
-    "main.js.map": "/applemusic2spotify/static/js/main.0e18b4e2.chunk.js.map",
+    "main.js": "/applemusic2spotify/static/js/main.89980172.chunk.js",
+    "main.js.map": "/applemusic2spotify/static/js/main.89980172.chunk.js.map",
     "runtime-main.js": "/applemusic2spotify/static/js/runtime-main.de49b6fc.js",
     "runtime-main.js.map": "/applemusic2spotify/static/js/runtime-main.de49b6fc.js.map",
     "static/css/2.d88ab335.chunk.css": "/applemusic2spotify/static/css/2.d88ab335.chunk.css",
     "static/js/2.02c91418.chunk.js": "/applemusic2spotify/static/js/2.02c91418.chunk.js",
     "static/js/2.02c91418.chunk.js.map": "/applemusic2spotify/static/js/2.02c91418.chunk.js.map",
     "index.html": "/applemusic2spotify/index.html",
-    "precache-manifest.c15e693458593b16f5d109d618dd223d.js": "/applemusic2spotify/precache-manifest.c15e693458593b16f5d109d618dd223d.js",
+    "precache-manifest.2c762cd9a4e35c153656fdf13ead3b64.js": "/applemusic2spotify/precache-manifest.2c762cd9a4e35c153656fdf13ead3b64.js",
     "service-worker.js": "/applemusic2spotify/service-worker.js",
     "static/css/2.d88ab335.chunk.css.map": "/applemusic2spotify/static/css/2.d88ab335.chunk.css.map",
     "static/css/main.686534b3.chunk.css.map": "/applemusic2spotify/static/css/main.686534b3.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.d88ab335.chunk.css",
     "static/js/2.02c91418.chunk.js",
     "static/css/main.686534b3.chunk.css",
-    "static/js/main.0e18b4e2.chunk.js"
+    "static/js/main.89980172.chunk.js"
   ]
 }
