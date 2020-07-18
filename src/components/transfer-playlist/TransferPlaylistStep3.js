@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button } from '@vkontakte/vkui';
+import Icon24SettingsOutline from '@vkontakte/icons/dist/56/settings_outline';
+import Icon28ArrowRightOutline from '@vkontakte/icons/dist/28/arrow_right_outline';
+import Icon28SmileOutline from '@vkontakte/icons/dist/44/smile_outline';
+import Icon28Pause from '@vkontakte/icons/dist/48/pause';
 import '@vkontakte/vkui/dist/vkui.css';
 import {
   Table,
-  Icon,
+  Button,
   Tag,
   Modal,
   List,
@@ -52,25 +55,30 @@ class TransferPlaylistStep3 extends React.Component {
       >
         <Button
           size={'large'}
-          style={{marginRight: 7}}
-          icon='setting'
+          style={{marginRight: 7, borderRadius: '500px'}}
         >
-          Search Settings
+          <div display='flex'>
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+          Search Settings<Icon24SettingsOutline width={20} height={20} style={{marginLeft: 4}}/>
+            </div>
+        </div>
         </Button>
       </Popover>
       <Button
         size={'large'}
-        icon='pause-circle'
-        style={{marginRight: 7}}
+        style={{marginRight: 7, borderRadius: '500px'}}
         disabled={spotifyStatus !== 'searching'}
         onClick={this.pause.bind(this)}
       >
-        Pause
+        <div display='flex'>
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+          Pause<Icon28Pause width={20} height={20} style={{marginLeft: 4}}/>
+            </div>
+        </div>
       </Button>
       <Button
         size={'large'}
-        icon='play-circle'
-        style={{marginRight: 7}}
+        style={{marginRight: 7, borderRadius: '500px'}}
         disabled={spotifyStatus !== 'paused' && spotifyStatus !== null}
         onClick={this.resume.bind(this)}
       >
@@ -89,21 +97,30 @@ class TransferPlaylistStep3 extends React.Component {
             type="primary"
             size={'large'}
             disabled={nextStepDisabled}
+            style={{borderRadius: '500px'}}
           >
-            Next Step
-            <Icon type="arrow-right"/>
+            <div display='flex'>
+              <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            Next Step<Icon28ArrowRightOutline style={{marginLeft: 4}}/>
+              </div>
+            </div>
           </Button>
         </Popconfirm>
       }
       {
         playlist.spotifyStatus === 'searchComplete' &&
         <Button
-          type="primary"
+          type="link"
           size={'large'}
+          style={{ background: '#1DB954', color: '#fff', borderRadius: '500px' }}
           onClick={this.nextStep.bind(this)}
           disabled={nextStepDisabled}
         >
-          Next Step<Icon type="arrow-right"/>
+          <div display='flex'>
+              <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            Next Step<Icon28ArrowRightOutline style={{marginLeft: 4}}/>
+              </div>
+            </div>
         </Button>
       }
 
@@ -127,29 +144,30 @@ class TransferPlaylistStep3 extends React.Component {
     switch (status) {
       default:
       case 'pending':
-        return <Tag color="#7f8c8d">Pending</Tag>;
+        return <Tag color="#7f8c8d" style={{borderRadius: '500px'}}>Pending</Tag>;
       case 'failed':
-        return <Tag color="#e74c3c">Failed</Tag>;
+        return <Tag color="#e74c3c" style={{borderRadius: '500px'}}>Failed</Tag>;
       case 'searching':
-        return <Tag color="#8e44ad">Searching</Tag>;
+        return <Tag color="#8e44ad" style={{borderRadius: '500px'}}>Searching</Tag>;
       case 'noResult':
-        return <Tag color="#f1c40f">No Result</Tag>;
+        return <Tag color="#f1c40f" style={{borderRadius: '500px'}}>No Result</Tag>;
       case 'withResult':
-        return <Tag color="#27ae60">Found</Tag>;
+        return <Tag color="#27ae60" style={{borderRadius: '500px'}}>Found</Tag>;
     }
   }
 
   statusColumn (text, row) {
     const status = row.spotifyStatus;
-    return <div>
+    return <div style={{display: 'flex', alignItems: 'center'}}>
       {this.trackLabel(row)}
       {
         status === 'withResult' &&
         <Button
+          style={{borderRadius: '500px'}}
           size={'small'}
           onClick={() => {
             this.setState({settingsItem: row.index, settingsVisible: true});
-          }}><Icon type="setting"/></Button>}
+          }}><Icon24SettingsOutline width={20} height={20}/></Button>}
     </div>;
   }
 
@@ -177,9 +195,11 @@ class TransferPlaylistStep3 extends React.Component {
             type="primary"
             style={{width: '100%'}}
             htmlType="submit"
-            icon='smile-o'
-          >
-            Done
+          ><div display='flex'>
+          <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+            Done<Icon28SmileOutline width={20} height={20}  style={{marginLeft: 4}}/>
+          </div>
+        </div>
           </Button>
         </FormItem>
       </Form>

@@ -51,7 +51,7 @@ export default class TransferPlaylistStep2 extends React.Component {
       onChange: this.onSelectChange,
     };
     return (
-      <div>
+      <div style={{maxWidth: '100%'}}>
         {this.nextStepButton()}
         <Table
           rowSelection={rowSelection}

@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { chunk } from 'lodash';
-import { Button } from '@vkontakte/vkui';
-import '@vkontakte/vkui/dist/vkui.css';
-import { Card, Dropdown, Menu, Form, Input, Modal, Checkbox, Table, Alert } from 'antd';
+import { Card, Dropdown, Button, Menu, Form, Input, Modal, Checkbox, Table, Alert } from 'antd';
 
 import { getPlaylists, createPlaylist, addTrackToPlaylist } from '../../services/ApiService';
 
@@ -191,21 +189,21 @@ class TransferPlaylistStep4 extends React.Component {
     }
     return <div>
       {this.state.playlist === null &&
-      <Card style={{marginRight: 'auto', marginLeft: 'auto', width: 650, textAlign: 'center'}}>
+      <Card style={{marginRight: 'auto', marginLeft: 'auto', maxWidth: '650px', textAlign: 'center'}}>
         <Button
-          type="primary"
-          size="large"
+          type="link"
+          size={'large'}
           onClick={() => this.setState({createPlaylistModalVisible: true})}
-          style={{marginRight: 5}}>
+          style={{marginLeft: 5, marginTop: 13, borderRadius: '500px', maxWidth: '600px', height: '50px', background: '#1DB954', color: '#fff'}}>
           Create a New Playlist
         </Button>
         <Dropdown trigger={['click']} overlay={this.selectPlaylistsMenu()} placement="bottomLeft">
           <Button
-            type="primary"
-            size="large"
+            type="link"
+            size={'large'}
             onClick={this.selectPlaylist.bind(this)}
             loading={this.state.fetchingPlaylists}
-            style={{marginLeft: 5}}>
+            style={{marginLeft: 5, marginTop: 13, borderRadius: '500px', maxWidth: '600px', height: '50px', background: '#1DB954', color: '#fff'}}>
             Import to Existing Playlist
           </Button>
         </Dropdown>

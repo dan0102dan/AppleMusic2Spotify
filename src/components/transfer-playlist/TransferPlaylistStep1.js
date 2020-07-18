@@ -41,7 +41,7 @@ export default class TransferPlaylistStep1 extends React.Component {
         Upload this file from the following field:
       </p>
       <Upload beforeUpload={this.beforeUpload.bind(this)} fileList={[]}>
-        <Button before={<Icon28DownloadOutline/>} style={{color: '#1DB954', background: '#f8f8f8'}}>
+        <Button before={<Icon28DownloadOutline/>} style={{color: '#1DB954', background: '#e2f1e5'}}>
           Select File
         </Button>
       </Upload>
