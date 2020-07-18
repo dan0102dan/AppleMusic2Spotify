@@ -14,12 +14,10 @@ body {
 	float: left;
 	margin: 0 40px 0 0;
 	font-size: 20px;
-    animation: left 3.7s ease;
 }
 
 #header .ant-menu {
 	border: 0;
-	animation: vision 3.7s ease;
 }
 
 #content {
@@ -33,38 +31,18 @@ body {
 }
 .button {
 	margin-top: 50px;
-	animation: down 3.7s ease;
 }
 
-@keyframes vision {
-	0% {
-	  opacity: 0;
-	}
-	100% {
-	  opacity: 1;
-	}
- }
-@keyframes left {
-   0% {
-     opacity: 0;
-     transform:  translate(-170px, 0px);
-   }
-   100% {
-     opacity: 1;
-     transform:  translate(0px, 0px);
-   }
-}
-@keyframes down {
-	0% {
-	  opacity: 0;
-	  transform:  translate(0px, 100px);
-	}
-	100% {
-	  opacity: 1;
-	  transform:  translate(0px, 0px);
-	}
- }
- @media only menu and (max-width: 10px) {
+@media only menu and (max-width: 10px) {
 	.header { margin-right: 15px; }
-  }
-  
+}
+@media screen and (max-width: 516px) {
+	#menu {
+		overflow-x: scroll;
+	}
+}
+@media screen and (max-width: 516px) {
+	.h1 {
+		font-size: 35px;
+	}
+}

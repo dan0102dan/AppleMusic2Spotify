@@ -12,11 +12,12 @@ class Header extends React.Component {
       <Layout.Header id="header">
         <h1>Apple Music 2 Spotify</h1>
         <Menu
-          overflowedIndicator={<Icon24More width={"35"} height={"35"}/>}
+          id='menu'
+          overflowedIndicator={<Icon24More width={"35"} height={"35"} style={{marginBottom: '13px', marginLeft: 'auto'}}/>}
           theme="dark"
           mode="horizontal"
           defaultSelectedKeys={[this.props.location.pathname]}
-          style={{lineHeight: '50px', overflowX: 'scroll'}}
+          style={{lineHeight: '64px'}}
         >
           <Menu.Item key={RouteConstants.HOME}>
             <Link to={RouteConstants.HOME}>Home</Link>
