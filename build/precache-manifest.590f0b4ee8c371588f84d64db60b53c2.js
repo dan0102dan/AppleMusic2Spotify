@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a74aef7a5941e77fa8e466a675edfab2",
+    "revision": "152d0b770dd887cfdb9f62a0efa26e98",
     "url": "/applemusic2spotify/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/applemusic2spotify/static/css/2.d88ab335.chunk.css"
   },
   {
-    "revision": "fe45f1710284c4174a83",
-    "url": "/applemusic2spotify/static/css/main.9ce0a29d.chunk.css"
+    "revision": "a7b94a512e35aa6c2214",
+    "url": "/applemusic2spotify/static/css/main.5774ce76.chunk.css"
   },
   {
     "revision": "f58e596585f961162477",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/applemusic2spotify/static/js/2.15ea5a11.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fe45f1710284c4174a83",
-    "url": "/applemusic2spotify/static/js/main.e9ce968f.chunk.js"
+    "revision": "a7b94a512e35aa6c2214",
+    "url": "/applemusic2spotify/static/js/main.122b0c9c.chunk.js"
   },
   {
     "revision": "90e7b06adb8f1d63b2df",

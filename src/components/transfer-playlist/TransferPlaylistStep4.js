@@ -67,8 +67,8 @@ class TransferPlaylistStep4 extends React.Component {
       visible={this.state.createPlaylistModalVisible}
       onCancel={() => this.setState({createPlaylistModalVisible: false})}
       footer={[
-        <Button key="back" onClick={() => this.setState({createPlaylistModalVisible: false})}>Cancel</Button>,
-        <Button key="submit" type="primary" loading={this.state.isCreatingPlaylist} onClick={this.createPlaylist.bind(this)}>
+        <Button style={{cursor: 'pointer'}} key="back" onClick={() => this.setState({createPlaylistModalVisible: false})}>Cancel</Button>,
+        <Button style={{cursor: 'pointer'}} key="submit" type="primary" loading={this.state.isCreatingPlaylist} onClick={this.createPlaylist.bind(this)}>
           Create
         </Button>,
       ]}
@@ -194,7 +194,7 @@ class TransferPlaylistStep4 extends React.Component {
           type="link"
           size={'large'}
           onClick={() => this.setState({createPlaylistModalVisible: true})}
-          style={{marginLeft: 5, marginTop: 13, borderRadius: '500px', maxWidth: '600px', height: '50px', background: '#1DB954', color: '#fff'}}>
+          style={{marginLeft: 5, marginTop: 13, borderRadius: '500px', maxWidth: '600px', height: '50px', background: '#1DB954', color: '#fff', cursor: 'pointer'}}>
           Create a New Playlist
         </Button>
         <Dropdown trigger={['click']} overlay={this.selectPlaylistsMenu()} placement="bottomLeft">
@@ -203,7 +203,7 @@ class TransferPlaylistStep4 extends React.Component {
             size={'large'}
             onClick={this.selectPlaylist.bind(this)}
             loading={this.state.fetchingPlaylists}
-            style={{marginLeft: 5, marginTop: 13, borderRadius: '500px', maxWidth: '600px', height: '50px', background: '#1DB954', color: '#fff'}}>
+            style={{marginLeft: 5, marginTop: 13, borderRadius: '500px', maxWidth: '600px', height: '50px', background: '#1DB954', color: '#fff', cursor: 'pointer'}}>
             Import to Existing Playlist
           </Button>
         </Dropdown>

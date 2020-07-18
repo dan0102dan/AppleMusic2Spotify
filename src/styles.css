@@ -1,23 +1,8 @@
-body {
-	padding-top: 60px;
+h1 {
+	font-size: 53px;
 }
-
-#header {
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 100;
-}
-
-#header h1 {
-	color: #fff;
-	float: left;
-	margin: 0 40px 0 0;
-	font-size: 20px;
-}
-
-#header .ant-menu {
-	border: 0;
+#menu {
+	font-size: 28px;
 }
 
 #content {
@@ -25,24 +10,54 @@ body {
 	padding: 40px 0;
 	min-height: calc(100vh - 133px);
 }
-
+.ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+	padding: 2px 13px;
+}
 .container {
 	padding: 0 50px;
 }
 .button {
 	margin-top: 50px;
 }
-
-@media only menu and (max-width: 10px) {
-	.header { margin-right: 15px; }
-}
-@media screen and (max-width: 516px) {
+@media screen and (max-width: 415px) {
+	h1 {
+		font-size: 47px;
+	}
+	h2 {
+		font-size: 25px;
+	}
 	#menu {
-		overflow-x: scroll;
+		font-size: 20px;
+	}
+	.ant-table {
+		font-size: 7px;
+	}
+	.container {
+		padding: 0 10px;
 	}
 }
-@media screen and (max-width: 516px) {
-	.h1 {
+@media screen and (max-width: 380px) {
+	h1 {
+		font-size: 42px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	#menu {
+		font-size: 17px;
+	}
+}
+@media screen and (max-width: 320px) {
+	h1 {
 		font-size: 35px;
+	}
+	h2 {
+		font-size: 17px;
+	}
+	#menu {
+		font-size: 15px;
+	}
+	.container {
+		padding: 0 2px;
 	}
 }

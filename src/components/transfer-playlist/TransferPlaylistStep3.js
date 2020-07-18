@@ -55,7 +55,7 @@ class TransferPlaylistStep3 extends React.Component {
       >
         <Button
           size={'large'}
-          style={{marginRight: 7, borderRadius: '500px'}}
+          style={{marginRight: 7, borderRadius: '500px', cursor: 'pointer', marginTop: 3}}
         >
           <div display='flex'>
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
@@ -66,7 +66,7 @@ class TransferPlaylistStep3 extends React.Component {
       </Popover>
       <Button
         size={'large'}
-        style={{marginRight: 7, borderRadius: '500px'}}
+        style={{marginRight: 7, borderRadius: '500px', cursor: 'pointer', marginTop: 3 }}
         disabled={spotifyStatus !== 'searching'}
         onClick={this.pause.bind(this)}
       >
@@ -78,7 +78,7 @@ class TransferPlaylistStep3 extends React.Component {
       </Button>
       <Button
         size={'large'}
-        style={{marginRight: 7, borderRadius: '500px'}}
+        style={{marginRight: 7, borderRadius: '500px', cursor: 'pointer', marginTop: 3}}
         disabled={spotifyStatus !== 'paused' && spotifyStatus !== null}
         onClick={this.resume.bind(this)}
       >
@@ -97,7 +97,7 @@ class TransferPlaylistStep3 extends React.Component {
             type="primary"
             size={'large'}
             disabled={nextStepDisabled}
-            style={{borderRadius: '500px'}}
+            style={{borderRadius: '500px', cursor: 'pointer', marginTop: 3}}
           >
             <div display='flex'>
               <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
@@ -112,7 +112,7 @@ class TransferPlaylistStep3 extends React.Component {
         <Button
           type="link"
           size={'large'}
-          style={{ background: '#1DB954', color: '#fff', borderRadius: '500px' }}
+          style={{ background: '#1DB954', color: '#fff', borderRadius: '500px', marginTop: 3 }}
           onClick={this.nextStep.bind(this)}
           disabled={nextStepDisabled}
         >
@@ -196,7 +196,7 @@ class TransferPlaylistStep3 extends React.Component {
             style={{width: '100%'}}
             htmlType="submit"
           ><div display='flex'>
-          <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+          <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer'}}>
             Done<Icon28SmileOutline width={20} height={20}  style={{marginLeft: 4}}/>
           </div>
         </div>
