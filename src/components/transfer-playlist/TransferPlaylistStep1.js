@@ -27,7 +27,7 @@ export default class TransferPlaylistStep1 extends React.Component {
     reader.onerror = function (evt) {
       notification.error({
         message    : 'Error',
-        description: 'Couldn\'t read file content. please try again.'
+        description: 'Couldn\'t read file content. Please try again.'
       });
     };
     return false;

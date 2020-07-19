@@ -11,6 +11,7 @@
     "antd": "^3.26.18",
     "axios": "^0.18.0",
     "axios-cancel": "^0.2.2",
+    "axios-jsonp-pro": "^1.1.8",
     "gh-pages": "^1.2.0",
     "papaparse": "^5.2.0",
     "prop-types": "^15.6.1",

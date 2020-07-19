@@ -54,6 +54,27 @@ export default class AppleMusicPlaylist {
     }
   }
 
+  setVKPlaylist (response) {
+    var x = 0
+    for (var value of response.data.response.items) {
+      this._playlist.push({
+        index          : x,
+        name           : value.title,
+        artist         : value.artist,
+        //album          : value.album.title,
+        //composer       : value.main_artists.name,
+        discCount      : '1',
+        discNumber     : '1',
+        year           : new Date(value.date * 1000).getFullYear(),
+        spotifyStatus  : 'pending',
+        spotifyResults : null,
+        spotifySelected: null
+      });
+      x++
+    }
+    console.log(this._playlist)
+  }
+
   filter (indexes) {
     const newPlaylist = [];
     for (let i = 0; indexes.length > i; i++) {
