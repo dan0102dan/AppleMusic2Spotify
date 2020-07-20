@@ -1,6 +1,6 @@
 {
-  "short_name": "Apple Music 2 Spotify",
-  "name": "Transfers apple music library to Spotify",
+  "short_name": "2 Spotify",
+  "name": "Transfers any music library to Spotify",
   "icons": [
     {
       "src": "favicon.ico",
