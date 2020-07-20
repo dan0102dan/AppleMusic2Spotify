@@ -13,7 +13,7 @@ export default class VKStep1 extends React.Component {
         Insert the album link in the lower field and press Enter
       </p>
         <Input
-        onKeyDown={(e) => {
+        onKeyDown={async (e) => {
           if (e.key === 'Enter') {
            try {
             var userId; var albumId; var access_key;
@@ -27,22 +27,37 @@ export default class VKStep1 extends React.Component {
             albumId = Number(str[0])
             access_key = Number(str[1])
             console.log(userId+'_'+albumId)
-            axios.post('http://51.222.27.2:3000', {
+            } catch {
+              notification.error({
+                message    : 'Error',
+                description: 'Incorrect link. Please try again.'
+              });
+              return;
+            }
+          try {
+            await axios.post('https://51.222.27.2:2096', {
               data: {
                 userId, albumId, access_key
               }
             })
             .then((response) => {
+              try {
               this.props.playlist.setVKPlaylist(response);
               this.props.onUpload();
+              } catch {
+                notification.error({
+                  message    : 'Error',
+                  description: response?.data.error.error_msg ? response?.data.error.error_msg : 'Server error'
+                });
+              }
             })
-           } catch {
+          } catch {
             notification.error({
               message    : 'Error',
-              description: 'Incorrect link. Please try again.'
-            });
-           }
+              description: 'Your Internet connection is not stable.'
+            })
           }
+        }
         }} placeholder="https://vk.com/music/playlist/..."/>
     </Card>;
   }

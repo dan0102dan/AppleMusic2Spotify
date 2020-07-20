@@ -1,9 +1,9 @@
 {
-  "name": "applemusic2spotify",
+  "name": "2spotify",
   "description": "Import your apple music to Spotify easily",
   "version": "0.1.0",
   "private": false,
-  "homepage": "https://dan0102dan.github.io/applemusic2spotify",
+  "homepage": "https://dan0102dan.github.io/2spotify",
   "dependencies": {
     "@vkontakte/icons": "^1.28.0",
     "@vkontakte/vk-bridge": "^2.2.3",
