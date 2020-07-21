@@ -35,7 +35,7 @@ export default class VKStep1 extends React.Component {
               return;
             }
           try {
-            await axios.post('http://51.222.27.2:2096', {
+            await axios.post('https://server.dan0102dan.ru', {
               data: {
                 userId, albumId, access_key
               }
