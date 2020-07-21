@@ -21,9 +21,9 @@ export default class Home extends React.Component {
   render () {
     return (
       <div>
-        <h1 style={{textAlign: 'center'}}>Apple Music to Spotify <span role="img" aria-label="music">🎸</span></h1>
+        <h1 style={{textAlign: 'center'}}>Any music to Spotify <span role="img" aria-label="music">🎸</span></h1>
         <h2 style={{textAlign: 'center'}}>
-          This tool helps you to transfer your playlists from apple music to Spotify.
+          This tool will help you transfer your playlists from any service to Spotify.
         </h2>
         {this.loginMessage()}
       </div>

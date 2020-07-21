@@ -72,7 +72,6 @@ export default class AppleMusicPlaylist {
       });
       x++
     }
-    console.log(this._playlist)
   }
 
   filter (indexes) {
