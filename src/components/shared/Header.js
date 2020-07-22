@@ -11,8 +11,8 @@ class Header extends React.Component {
         <Menu.Item key={RouteConstants.HOME}>
           <Link to={RouteConstants.HOME}>Home</Link>
         </Menu.Item>
-        <Menu.Item key={RouteConstants.TRANSFER_PLAYLIST}>
-          <Link to={RouteConstants.TRANSFER_PLAYLIST}>Apple Music</Link>
+        <Menu.Item key={RouteConstants.APPlE}>
+          <Link to={RouteConstants.APPlE}>Apple Music</Link>
         </Menu.Item>
         <Menu.Item key={RouteConstants.VK}>
           <Link to={RouteConstants.VK}>Boom (VK)</Link>

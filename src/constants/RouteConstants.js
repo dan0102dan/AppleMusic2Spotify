@@ -1,4 +1,4 @@
 export const HOME = '/';
-export const TRANSFER_PLAYLIST = '/transfer-playlist';
-export const VK = '/vk-album';
+export const APPlE = '/apple.js';
+export const VK = '/vk';
 export const LOGIN_CALLBACK = '/login-callback';

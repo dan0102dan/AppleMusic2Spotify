@@ -25,7 +25,7 @@ import AppleMusicPlaylist from '../../services/AppleMusicPlaylist';
 
 const FormItem = Form.Item;
 
-class TransferPlaylistStep3 extends React.Component {
+class appleStep3 extends React.Component {
 
   state = {
     settingsItem   : null,
@@ -308,9 +308,9 @@ class TransferPlaylistStep3 extends React.Component {
   }
 }
 
-TransferPlaylistStep3.propTypes = {
+appleStep3.propTypes = {
   playlist: PropTypes.instanceOf(AppleMusicPlaylist).isRequired,
   nextStep: PropTypes.func.isRequired
 };
 
-export default Form.create()(TransferPlaylistStep3);
+export default Form.create()(appleStep3);

@@ -7,7 +7,7 @@ import { Table } from 'antd';
 
 import AppleMusicPlaylist from '../../services/AppleMusicPlaylist';
 
-export default class TransferPlaylistStep2 extends React.Component {
+export default class appleStep2 extends React.Component {
 
   state = {
     selectedRowKeys: []
@@ -80,7 +80,7 @@ export default class TransferPlaylistStep2 extends React.Component {
   }
 }
 
-TransferPlaylistStep2.propTypes = {
+appleStep2.propTypes = {
   playlist: PropTypes.instanceOf(AppleMusicPlaylist).isRequired,
   next    : PropTypes.func.isRequired
 };

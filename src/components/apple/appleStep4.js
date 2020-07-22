@@ -8,7 +8,7 @@ import { getPlaylists, createPlaylist, addTrackToPlaylist } from '../../services
 const FormItem = Form.Item;
 const {TextArea} = Input;
 
-class TransferPlaylistStep4 extends React.Component {
+class appleStep4 extends React.Component {
 
   state = {
     playlist                  : null,
@@ -215,9 +215,9 @@ class TransferPlaylistStep4 extends React.Component {
   }
 }
 
-TransferPlaylistStep4.propTypes = {
+appleStep4.propTypes = {
   user    : PropTypes.object.isRequired,
   playlist: PropTypes.object.isRequired
 };
 
-export default Form.create()(TransferPlaylistStep4);
+export default Form.create()(appleStep4);

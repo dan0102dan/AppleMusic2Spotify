@@ -4,10 +4,10 @@ import { Steps } from 'antd';
 import { isLoggedIn } from '../../services/AuthService';
 import AppleMusicPlaylist from '../../services/AppleMusicPlaylist';
 import { getCurrentUser } from '../../services/ApiService';
-import TransferPlaylistStep1 from './TransferPlaylistStep1';
-import TransferPlaylistStep2 from './TransferPlaylistStep2';
-import TransferPlaylistStep3 from './TransferPlaylistStep3';
-import TransferPlaylistStep4 from './TransferPlaylistStep4';
+import appleStep1 from './appleStep1';
+import appleStep2 from './appleStep2';
+import appleStep3 from './appleStep3';
+import appleStep4 from './appleStep4';
 
 export default class TransferPlaylist extends React.Component {
 
@@ -42,7 +42,7 @@ export default class TransferPlaylist extends React.Component {
   }
 
   step1 () {
-    return <TransferPlaylistStep1
+    return <appleStep1
       playlist={this.appleMusicPlaylist}
       onUpload={() => {
         this.setState({
@@ -53,21 +53,21 @@ export default class TransferPlaylist extends React.Component {
   }
 
   step2 () {
-    return <TransferPlaylistStep2
+    return <appleStep2
       playlist={this.appleMusicPlaylist}
       next={() => this.setState({step: 2})}
     />;
   }
 
   step3 () {
-    return <TransferPlaylistStep3
+    return <appleStep3
       playlist={this.appleMusicPlaylist}
       nextStep={() => this.setState({step: 3})}
     />;
   }
 
   step4 () {
-    return <TransferPlaylistStep4
+    return <appleStep4
       user={this.state.user}
       playlist={this.appleMusicPlaylist}
     />;

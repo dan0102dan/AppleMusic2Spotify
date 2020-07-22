@@ -16,17 +16,28 @@ export default class VKStep1 extends React.Component {
         onKeyDown={async (e) => {
           if (e.key === 'Enter') {
            try {
-            var userId; var albumId; var access_key;
+            var userId; var albumId; var access_key; var app;
+            app = 'vk'
             var str = e.target.value
-            str = str.split('playlist')
-            str.splice(0, 1)
-            str = str[0].toString()
-            str = str.split('_')
-            userId = Number(str[0].replace(/[^-_\d]/g, ''))
-            str = str[1].split('/')
-            albumId = Number(str[0])
-            access_key = Number(str[1])
-            console.log(userId+'_'+albumId)
+            if (str.search(/playlist/i) > -1) {
+              str = str.split('playlist')
+              str.splice(0, 1)
+              str = str[0].toString()
+              str = str.split('_')
+              userId = Number(str[0].replace(/[^-_\d]/g, ''))
+              str = str[1].split('/')
+              albumId = Number(str[0])
+              access_key = str[1]
+            }
+            else if (str.search(/album/i) > -1) {
+              str = str.split('album')
+              str.splice(0, 1)
+              str = str[0].toString()
+              str = str.split('_')
+              userId = Number(str[0].replace(/[^-_\d]/g, ''))
+              albumId = Number(str[1])
+              access_key = str[2]
+            }
             } catch {
               notification.error({
                 message    : 'Error',
@@ -37,7 +48,7 @@ export default class VKStep1 extends React.Component {
           try {
             await axios.post('https://server.dan0102dan.ru', {
               data: {
-                userId, albumId, access_key
+                userId, albumId, access_key, app
               }
             })
             .then((response) => {
