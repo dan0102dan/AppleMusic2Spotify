@@ -6,7 +6,7 @@ import Icon28DownloadOutline from '@vkontakte/icons/dist/28/download_outline';
 import { Upload, Card, notification } from 'antd';
 import AppleMusicPlaylist from '../../services/AppleMusicPlaylist';
 
-export default class appleStep1 extends React.Component {
+export default class AppleStep1 extends React.Component {
 
   beforeUpload (file) {
     let reader = new FileReader();
@@ -49,7 +49,7 @@ export default class appleStep1 extends React.Component {
   }
 }
 
-appleStep1.propTypes = {
+AppleStep1.propTypes = {
   playlist: PropTypes.instanceOf(AppleMusicPlaylist).isRequired,
   onUpload: PropTypes.func.isRequired
 };
