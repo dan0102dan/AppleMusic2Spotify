@@ -6,17 +6,17 @@ import { Card, notification } from 'antd';
 import AppleMusicPlaylist from '../../services/AppleMusicPlaylist';
 import axios from 'axios-jsonp-pro';
 
-export default class VKStep1 extends React.Component {
+export default class YandexStep1 extends React.Component {
   render () {
     return <Card style={{marginRight: 'auto', marginLeft: 'auto', maxWidth: '650px', textAlign: 'center'}}>
       <p>
-        Insert the album link in the lower field and press Enter
+        Insert the playlist link in the lower field and press Enter
       </p>
         <Input
         onKeyDown={async (e) => {
           if (e.key === 'Enter') {
            try {
-            var userId; var playlistId; var access_key; var app;
+            var userId; var albumId; var access_key; var app;
             app = 'vk'
             var str = e.target.value
             if (str.search(/playlist/i) > -1) {
@@ -26,7 +26,7 @@ export default class VKStep1 extends React.Component {
               str = str.split('_')
               userId = Number(str[0].replace(/[^-_\d]/g, ''))
               str = str[1].split('/')
-              playlistId = Number(str[0])
+              albumId = Number(str[0])
               access_key = str[1]
             }
             else if (str.search(/album/i) > -1) {
@@ -35,7 +35,7 @@ export default class VKStep1 extends React.Component {
               str = str[0].toString()
               str = str.split('_')
               userId = Number(str[0].replace(/[^-_\d]/g, ''))
-              playlistId = Number(str[1])
+              albumId = Number(str[1])
               access_key = str[2]
             }
             } catch {
@@ -48,7 +48,7 @@ export default class VKStep1 extends React.Component {
           try {
             await axios.post('https://server.dan0102dan.ru', {
               data: {
-                userId, playlistId, access_key, app
+                userId, albumId, access_key, app
               }
             })
             .then((response) => {
@@ -69,12 +69,12 @@ export default class VKStep1 extends React.Component {
             })
           }
         }
-        }} placeholder="https://vk.com/music/playlist/..."/>
+        }} placeholder="https://music.yandex.ru/users/..."/>
     </Card>;
   }
 }
 
-VKStep1.propTypes = {
+YandexStep1.propTypes = {
   playlist: PropTypes.instanceOf(AppleMusicPlaylist).isRequired,
   onUpload: PropTypes.func.isRequired
 };

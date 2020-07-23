@@ -56,7 +56,7 @@ export default class AppleMusicPlaylist {
 
   setVKPlaylist (response) {
     var x = 0
-    for (var value of response.data.response.items) {
+    for (var value of response.data.items) {
       this._playlist.push({
         index          : x,
         name           : value.title,

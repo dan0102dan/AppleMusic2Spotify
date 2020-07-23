@@ -17,6 +17,9 @@ class Header extends React.Component {
         <Menu.Item key={RouteConstants.VK}>
           <Link to={RouteConstants.VK}>Boom (VK)</Link>
         </Menu.Item>
+        <Menu.Item key={RouteConstants.YANDEX}>
+          <Link to={RouteConstants.YANDEX}>Yandex</Link>
+        </Menu.Item>
       </Menu>
     );
   }
