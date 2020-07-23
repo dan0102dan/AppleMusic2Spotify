@@ -74,6 +74,10 @@ export default class AppleMusicPlaylist {
     }
   }
 
+  setYandexPlaylist (response) {
+    this._playlist = response.data
+  }
+
   filter (indexes) {
     const newPlaylist = [];
     for (let i = 0; indexes.length > i; i++) {
