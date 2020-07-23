@@ -14,6 +14,14 @@ h1 {
 .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
 	padding: 2px 13px;
 }
+.ant-btn-primary {
+	background: #d6363f;
+	border-color: transparent;
+}
+.ant-btn-primary:hover, .ant-btn-primary:focus {
+	background: #96262c;
+	border-color: #fff;
+}
 .container {
 	padding: 0 50px;
 }

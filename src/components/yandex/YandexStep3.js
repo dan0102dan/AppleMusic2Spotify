@@ -112,7 +112,7 @@ class YandexStep3 extends React.Component {
         <Button
           type="link"
           size={'large'}
-          style={{ background: '#1DB954', color: '#fff', borderRadius: '500px', marginTop: 3 }}
+          style={{ background: '#d6363f', color: '#fff', borderRadius: '500px', marginTop: 3 }}
           onClick={this.nextStep.bind(this)}
           disabled={nextStepDisabled}
         >

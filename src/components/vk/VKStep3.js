@@ -66,7 +66,7 @@ class VKStep3 extends React.Component {
       </Popover>
       <Button
         size={'large'}
-        style={{marginRight: 7, borderRadius: '500px', cursor: 'pointer', marginTop: 3 }}
+        style={{ marginRight: 7, borderRadius: '500px', cursor: 'pointer', marginTop: 3 }}
         disabled={spotifyStatus !== 'searching'}
         onClick={this.pause.bind(this)}
       >
@@ -78,7 +78,7 @@ class VKStep3 extends React.Component {
       </Button>
       <Button
         size={'large'}
-        style={{marginRight: 7, borderRadius: '500px', cursor: 'pointer', marginTop: 3}}
+        style={{ marginRight: 7, borderRadius: '500px', cursor: 'pointer', marginTop: 3}}
         disabled={spotifyStatus !== 'paused' && spotifyStatus !== null}
         onClick={this.resume.bind(this)}
       >
@@ -112,7 +112,7 @@ class VKStep3 extends React.Component {
         <Button
           type="link"
           size={'large'}
-          style={{ background: '#1DB954', color: '#fff', borderRadius: '500px', marginTop: 3 }}
+          style={{ background: '#d6363f', color: '#fff', borderRadius: '500px', marginTop: 3 }}
           onClick={this.nextStep.bind(this)}
           disabled={nextStepDisabled}
         >
@@ -180,7 +180,7 @@ class VKStep3 extends React.Component {
       >
         <FormItem
           label='Search Format'
-          help="Placeholders: {name}, {artist}, {album}, {composer}, {discCount}, {discNumber}, {genre}, {trackCount}, {trackNumber} and {year}"
+          help="Placeholders: {name}, {artist}, {discCount}, {discNumber} and {year}"
         >
           {getFieldDecorator('searchFormat',
             {

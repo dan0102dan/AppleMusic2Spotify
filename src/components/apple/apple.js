@@ -101,7 +101,7 @@ export default class Apple extends React.Component {
         <Steps current={this.state.step}>
           <Step title="Upload Playlist" description="Upload playlist file"/>
           <Step title="Select Playlist Songs" description="Select specific songs of the playlist to transfer"/>
-          <Step title="Find Playlist Songs" description="Search for playlist songs on Spotify"/>
+          <Step title="Find Playlist Songs" description="Automatic search for playlist songs on Spotify"/>
           <Step title="Import Songs" description="Import playlist songs to a Spotify playlist"/>
         </Steps>
         <div style={{marginTop: 50}}>

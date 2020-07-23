@@ -31,7 +31,7 @@ export default class appleStep2 extends React.Component {
           </span>
       <Button
       size="l" 
-      style={{ background: '#1DB954', color: '#fff', borderRadius: '500px' }}
+      style={{ background: '#d6363f', color: '#fff', borderRadius: '500px' }}
       onClick={this.nextStep.bind(this)}
       disabled={!hasSelected}>
         <div
