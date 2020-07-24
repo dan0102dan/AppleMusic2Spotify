@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Button, Input } from '@vkontakte/vkui';
+import { Button } from '@vkontakte/vkui';
 import '@vkontakte/vkui/dist/vkui.css';
 import Icon28DownloadOutline from '@vkontakte/icons/dist/28/download_outline';
 import { Upload, Card, notification } from 'antd';
 import AppleMusicPlaylist from '../../services/AppleMusicPlaylist';
-import axios from 'axios-jsonp-pro';
 
 export default class AppleStep1 extends React.Component {
 
@@ -46,37 +45,6 @@ export default class AppleStep1 extends React.Component {
           Select File
         </Button>
       </Upload>
-      <p style={{marginTop: '12px'}}>
-        You also can put link on playlist
-      </p>
-      <Input
-        onKeyDown={async (e) => {
-          if (e.key === 'Enter') {
-            var app = 'apple'
-            var link = e.target.value
-            try {
-              await axios.post('https://server.dan0102dan.ru', {
-                data: { link, app }
-              })
-              .then((response) => {
-                try {
-                this.props.playlist.setVKPlaylist(response);
-                this.props.onUpload();
-                } catch {
-                  notification.error({
-                    message    : 'Error',
-                    description: response?.data.error.error_msg ? response?.data.error.error_msg : 'Server error'
-                  });
-                }
-              })
-            } catch {
-              notification.error({
-                message    : 'Error',
-                description: 'Your Internet connection is not stable.'
-              })
-            }
-          }
-        }} placeholder="https://music.apple.com/playlist..."/>
     </Card>;
   }
 }

@@ -48,6 +48,26 @@ class appleStep3 extends React.Component {
       }
     }
     return <div style={{margin: '16px 0', textAlign: 'right'}}>
+      <Button
+        size={'large'}
+        style={{marginRight: 7, borderRadius: '500px', cursor: 'pointer', marginTop: 3}}
+        disabled={spotifyStatus !== 'paused' && spotifyStatus !== null}
+        onClick={this.resume.bind(this)}
+      >
+        Start/Resume
+      </Button>
+      <Button
+        size={'large'}
+        style={{marginRight: 7, borderRadius: '500px', cursor: 'pointer', marginTop: 3 }}
+        disabled={spotifyStatus !== 'searching'}
+        onClick={this.pause.bind(this)}
+      >
+        <div display='flex'>
+            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+          Pause<Icon28Pause width={20} height={20} style={{marginLeft: 4}}/>
+            </div>
+        </div>
+      </Button>
       <Popover
         trigger="click"
         placement={placement === 'top' ? 'bottomRight' : 'topRight'}
@@ -64,26 +84,6 @@ class appleStep3 extends React.Component {
         </div>
         </Button>
       </Popover>
-      <Button
-        size={'large'}
-        style={{marginRight: 7, borderRadius: '500px', cursor: 'pointer', marginTop: 3 }}
-        disabled={spotifyStatus !== 'searching'}
-        onClick={this.pause.bind(this)}
-      >
-        <div display='flex'>
-            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-          Pause<Icon28Pause width={20} height={20} style={{marginLeft: 4}}/>
-            </div>
-        </div>
-      </Button>
-      <Button
-        size={'large'}
-        style={{marginRight: 7, borderRadius: '500px', cursor: 'pointer', marginTop: 3}}
-        disabled={spotifyStatus !== 'paused' && spotifyStatus !== null}
-        onClick={this.resume.bind(this)}
-      >
-        Start/Resume
-      </Button>
 
       {
         playlist.spotifyStatus !== 'searchComplete' &&

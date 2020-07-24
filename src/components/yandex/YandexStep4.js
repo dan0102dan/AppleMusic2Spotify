@@ -190,11 +190,14 @@ class YandexStep4 extends React.Component {
     return <div>
       {this.state.playlist === null &&
       <Card style={{marginRight: 'auto', marginLeft: 'auto', maxWidth: '650px', textAlign: 'center'}}>
+        <p>
+        Choose where you want to move the songs, to a new album or an existing one?
+        </p>
         <Button
           type="link"
           size={'large'}
           onClick={() => this.setState({createPlaylistModalVisible: true})}
-          style={{marginLeft: 5, marginTop: 13, borderRadius: '500px', maxWidth: '600px', height: '50px', background: '#1DB954', color: '#fff', cursor: 'pointer'}}>
+          style={{marginLeft: 5, marginTop: 13, borderRadius: '500px', maxWidth: '600px', height: '45px', background: '#1DB954', color: '#fff', cursor: 'pointer'}}>
           Create a New Playlist
         </Button>
         <Dropdown trigger={['click']} overlay={this.selectPlaylistsMenu()} placement="bottomLeft">
@@ -203,7 +206,7 @@ class YandexStep4 extends React.Component {
             size={'large'}
             onClick={this.selectPlaylist.bind(this)}
             loading={this.state.fetchingPlaylists}
-            style={{marginLeft: 5, marginTop: 13, borderRadius: '500px', maxWidth: '600px', height: '50px', background: '#1DB954', color: '#fff', cursor: 'pointer'}}>
+            style={{marginLeft: 5, marginTop: 13, borderRadius: '500px', maxWidth: '600px', height: '45px', background: '#1DB954', color: '#fff', cursor: 'pointer'}}>
             Import to Existing Playlist
           </Button>
         </Dropdown>
