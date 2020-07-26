@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/2spotify/static/css/main.6d20a323.chunk.css",
-    "main.js": "/2spotify/static/js/main.d916cfdd.chunk.js",
-    "main.js.map": "/2spotify/static/js/main.d916cfdd.chunk.js.map",
+    "main.js": "/2spotify/static/js/main.20fa78ab.chunk.js",
+    "main.js.map": "/2spotify/static/js/main.20fa78ab.chunk.js.map",
     "runtime-main.js": "/2spotify/static/js/runtime-main.78161879.js",
     "runtime-main.js.map": "/2spotify/static/js/runtime-main.78161879.js.map",
-    "static/css/2.d88ab335.chunk.css": "/2spotify/static/css/2.d88ab335.chunk.css",
-    "static/js/2.e6e7820c.chunk.js": "/2spotify/static/js/2.e6e7820c.chunk.js",
-    "static/js/2.e6e7820c.chunk.js.map": "/2spotify/static/js/2.e6e7820c.chunk.js.map",
+    "static/css/2.241c4c25.chunk.css": "/2spotify/static/css/2.241c4c25.chunk.css",
+    "static/js/2.28aacb8e.chunk.js": "/2spotify/static/js/2.28aacb8e.chunk.js",
+    "static/js/2.28aacb8e.chunk.js.map": "/2spotify/static/js/2.28aacb8e.chunk.js.map",
     "index.html": "/2spotify/index.html",
-    "precache-manifest.1f799c5af03ceab63107071f64366497.js": "/2spotify/precache-manifest.1f799c5af03ceab63107071f64366497.js",
+    "precache-manifest.f45c05172521ee9ae5e32ac46e82c7e2.js": "/2spotify/precache-manifest.f45c05172521ee9ae5e32ac46e82c7e2.js",
     "service-worker.js": "/2spotify/service-worker.js",
-    "static/css/2.d88ab335.chunk.css.map": "/2spotify/static/css/2.d88ab335.chunk.css.map",
+    "static/css/2.241c4c25.chunk.css.map": "/2spotify/static/css/2.241c4c25.chunk.css.map",
     "static/css/main.6d20a323.chunk.css.map": "/2spotify/static/css/main.6d20a323.chunk.css.map",
-    "static/js/2.e6e7820c.chunk.js.LICENSE.txt": "/2spotify/static/js/2.e6e7820c.chunk.js.LICENSE.txt"
+    "static/js/2.28aacb8e.chunk.js.LICENSE.txt": "/2spotify/static/js/2.28aacb8e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.78161879.js",
-    "static/css/2.d88ab335.chunk.css",
-    "static/js/2.e6e7820c.chunk.js",
+    "static/css/2.241c4c25.chunk.css",
+    "static/js/2.28aacb8e.chunk.js",
     "static/css/main.6d20a323.chunk.css",
-    "static/js/main.d916cfdd.chunk.js"
+    "static/js/main.20fa78ab.chunk.js"
   ]
 }
