@@ -23,7 +23,7 @@ export default class Apple extends React.Component {
     this.appleMusicPlaylist = new AppleMusicPlaylist({});
   }
 
-  componentWillMount () {
+  componentDidMount () {
     if (isLoggedIn()) {
       this.setState({
         isFetchingUser: true
@@ -97,7 +97,7 @@ export default class Apple extends React.Component {
     }
     return (
       <div>
-        <h2 style={{textAlign: 'center'}}>Transfer Playlist</h2><br/>
+        <h2 style={{ textAlign: 'center', color: 'rgb(248, 219)' }}>Yandex</h2><br/>
         <Steps current={this.state.step}>
         <Step title="Upload Playlist" description="Insert the link"/>
           <Step title="Select Playlist Songs" description="Select specific songs of the playlist to transfer"/>

@@ -16,13 +16,19 @@ import {
   Popconfirm,
   Popover,
   Form,
-  Input
+  Input,
+  Progress,
+  Statistic,
+  Row,
+  Col,
+  Card
 } from 'antd';
 import { each } from 'lodash';
 import { formatSeconds } from '../../services/UtilsService';
 
 import AppleMusicPlaylist from '../../services/AppleMusicPlaylist';
 
+var completed, finded, failed;
 const FormItem = Form.Item;
 
 class YandexStep3 extends React.Component {
@@ -42,17 +48,31 @@ class YandexStep3 extends React.Component {
     let nextStepDisabled = true;
     const {playlist} = this.props;
     const {spotifyStatus} = playlist;
+    completed = 0;
+    finded = 0;
+    failed = 0;
     for (let index = 0; playlist.playlist.length > index; index++) {
       if (playlist.playlist[index].spotifyStatus === 'withResult') {
         nextStepDisabled = false;
       }
+      if (playlist.playlist[index].spotifyStatus !== 'pending') {
+        completed++
+      }
+      if (playlist.playlist[index].spotifyStatus === 'withResult') {
+        finded++
+      }
+      if (playlist.playlist[index].spotifyStatus === 'noResult') {
+        failed++
+      }
     }
+    completed = Math.round(completed/playlist.playlist.length*100)
     return <div style={{margin: '16px 0', textAlign: 'right'}}>
       <Button
         size={'large'}
         style={{marginRight: 7, borderRadius: '500px', cursor: 'pointer', marginTop: 3}}
         disabled={spotifyStatus !== 'paused' && spotifyStatus !== null}
         onClick={this.resume.bind(this)}
+        type='dashed'
       >
         Start/Resume
       </Button>
@@ -275,6 +295,38 @@ class YandexStep3 extends React.Component {
 
   render () {
     return <div>
+      <div style={{maxWidth: window.innerWidth-window.innerWidth*0.3, marginRight: 'auto', marginLeft: 'auto', textAlign: 'center' }}>
+      <Row gutter={16}>
+      <Col span={12}>
+        <Card>
+          <Statistic
+            title="Found"
+            value={finded}
+            precision={0}
+            valueStyle={{ color: '#3f8600' }}
+            suffix='👍'
+            style={{height: '57px'}}
+          />
+        </Card>
+      </Col>
+      <Col span={12}>
+        <Card>
+          <Statistic
+            title="Without result"
+            value={failed}
+            precision={0}
+            valueStyle={{ color: '#cf1322' }}
+            suffix='👎'
+            style={{height: '57px'}}
+          />
+        </Card>
+      </Col>
+    </Row>
+      <Progress percent={completed} status="active" strokeColor={{
+        '0%': '#108ee9',
+        '100%': '#87d068',
+      }} />
+      </div>
       {this.buttons('top')}
       <Table
         rowKey="index"

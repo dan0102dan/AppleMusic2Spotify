@@ -1,12 +1,47 @@
 h1 {
 	font-size: 53px;
 }
-#menu {
-	font-size: 28px;
-}
-
 #content {
 	padding: 40px 0;
+}
+.ant-btn#AppleButton {
+	background: #e03f45;
+	color: #f1f1f1;
+	border-color: transparent;
+}
+.ant-layout#AppleButton {
+	background: transparent;
+}
+.ant-btn:hover#AppleButton, .ant-btn:focus#AppleButton {
+	background: #bc353a;
+	color: #fff;
+	border-color: #fff;
+}
+.ant-btn#VKButton {
+	background: #6aa1f3;
+	color: #f1f1f1;
+	border-color: transparent;
+}
+.ant-layout#VKButton {
+	background: transparent;
+}
+.ant-btn:hover#VKButton, .ant-btn:focus#VKButton {
+	background: #5785c9;
+	color: #fff;
+	border-color: #fff;
+}
+.ant-btn#YandexButton {
+	background: rgb(248, 219, 100);
+	border-color: transparent;
+	color: currentColor;
+}
+.ant-layout#YandexButton {
+	background: transparent;
+}
+.ant-btn:hover#YandexButton, .ant-btn:focus#YandexButton {
+	background: rgb(248, 210, 100);
+	color: #000;
+	border-color: #fff;
 }
 .ant-layout {
 	background: transparent;
@@ -28,15 +63,20 @@ h1 {
 .button {
 	margin-top: 50px;
 }
+.ant-statistic-title {
+	font-size: 18px;
+}
+@media screen and (max-width: 445px) {
+	.ant-statistic-title {
+		font-size: 15px;
+	}
+}
 @media screen and (max-width: 415px) {
 	h1 {
 		font-size: 47px;
 	}
 	h2 {
 		font-size: 25px;
-	}
-	#menu {
-		font-size: 20px;
 	}
 	.ant-table {
 		font-size: 7px;
@@ -52,9 +92,6 @@ h1 {
 	h2 {
 		font-size: 22px;
 	}
-	#menu {
-		font-size: 17px;
-	}
 }
 @media screen and (max-width: 320px) {
 	h1 {
@@ -63,10 +100,18 @@ h1 {
 	h2 {
 		font-size: 17px;
 	}
-	#menu {
-		font-size: 15px;
-	}
 	.container {
 		padding: 0 2px;
+	}
+}
+@media screen and (max-width: 210px) {
+	h1 {
+		font-size: 35px;
+	}
+	h2 {
+		font-size: 17px;
+	}
+	.ant-statistic-title {
+		font-size: 13px;
 	}
 }
