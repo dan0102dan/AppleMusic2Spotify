@@ -1,8 +1,8 @@
 <h1 align="left">
-  <a href="https://vk.com/app7647010/"><img src="image.png" width="250" alt="newRelease logo"></a>
+  <a href="https://dan0102dan.ru/2spotify/"><img src="image.png" width="250" alt="2Spotify logo"></a>
 </h1>
 
 Музыкальные новинки — сервис для отслеживания появления новых треков у Ваших любимых исполнителей!
 
-| 🎸 [Open](https://vk.com/app7647010) |
+| 🎸 [Open](https://dan0102dan.ru/2spotify/) |
 |----------------------------------------------|
