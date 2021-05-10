@@ -10,7 +10,7 @@
     "@vkontakte/vk-bridge": "^2.2.4",
     "@vkontakte/vkui": "^3.12.0",
     "antd": "^3.26.18",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "axios-cancel": "^0.2.2",
     "axios-jsonp-pro": "^1.1.8",
     "cheerio": "^1.0.0-rc.3",
